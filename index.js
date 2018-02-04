@@ -3,7 +3,7 @@ const getEnvironment = () => utilities.valueOrDefault(process.env.stage, 'dev')
 const getServicesPath = () => utilities.valueOrDefault(process.env.SERVICES_PATH, './services')
 const getCredentialsPath = () => utilities.valueOrDefault(process.env.CREDENTIALS_PATH, './credentials')
 const getParametersPath = () => utilities.valueOrDefault(process.env.PARAMETERS_PATH, './parameters')
-const getServicePath = () => utilities.valueOrDefault(process.env.SERVICE_PATH, './service')
+const getServicePath = () => utilities.valueOrDefault(process.env.SERVICE_PATH, '../../../service')
 
 // Standard useful utility functions
 const createStandardErrorHandler = (callback, service) => (err) => { let response = service.prepareErrorResponse(err); callback(null, response) }

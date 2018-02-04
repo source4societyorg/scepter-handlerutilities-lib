@@ -10,7 +10,7 @@ test('Environment variable values are set to defaults', () => {
   const getParametersPath = require('../index').getParametersPath
   const getServicesPath = require('../index').getServicesPath
   expect(getEnvironment()).toEqual('dev')
-  expect(getServicePath()).toEqual('./service')
+  expect(getServicePath()).toEqual('../../../service')
   expect(getServicesPath()).toEqual('./services')
   expect(getCredentialsPath()).toEqual('./credentials')
   expect(getParametersPath()).toEqual('./parameters')
