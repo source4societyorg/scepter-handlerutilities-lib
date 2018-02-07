@@ -1,6 +1,16 @@
 # scepter-handlerutilities-lib
 Utilities for universal serverless handler functions
 
+[![scepter-logo](http://res.cloudinary.com/source-4-society/image/upload/v1514622047/scepter_hzpcqt.png)](https://github.com/source4societyorg/SCEPTER-core)
+
+[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
+
+[![Build Status](https://travis-ci.org/source4societyorg/scepter-handlerutilities-lib.svg?branch=master)](https://travis-ci.org/source4societyorg/scepter-handlerutilities-lib)
+
+[![codecov](https://codecov.io/gh/source4societyorg/scepter-handlerutilities-lib/branch/master/graph/badge.svg)](https://codecov.io/gh/source4societyorg/scepter-handlerutilities-lib)
+
+[![Serverless](http://public.serverless.com/badges/v1.svg)](http://serverless.com)
+
 ## How to use
 
 This utility library is intended to be used in conjunction with the [SCEPTER Framework](https://github.com/sourc e4societyorg/SCEPTER-Core) although it can be used independently with the [Serverless Framework](https://www.serverless.com) to standardize handling of errors.

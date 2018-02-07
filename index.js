@@ -16,7 +16,7 @@ const constructServiceDefault = (servicePath, environment, credentialsPath, serv
 const genericHandlerFunction = (
   event,
   context,
-  callback,
+  injectedCallback,
   serviceCall,
   injectedServicePath,
   injectedConstructService,
@@ -29,6 +29,7 @@ const genericHandlerFunction = (
   injectedGetSuccessHandlerDependency
 ) => {
   // inject dependencies
+  const callback = utilities.valueOrDefault(injectedCallback, context.done)
   const servicePath = utilities.valueOrDefault(injectedServicePath, getServicePath())
   const constructService = utilities.valueOrDefault(injectedConstructService, constructServiceDefault)
   const env = utilities.valueOrDefault(injectedEnv, getEnvironment())
