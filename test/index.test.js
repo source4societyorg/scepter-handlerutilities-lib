@@ -31,8 +31,8 @@ test('Generic handler function constructs service class', (done) => {
 
   genericHandlerFunction(
     {},
-    null,
-    null,
+    {},
+    () => {},
     null,
     'testservice',
     mockConstructService,
@@ -56,8 +56,8 @@ test('Generic handler function handles error when thrown by service', (done) => 
   }
   genericHandlerFunction(
     {},
-    null,
-    null,
+    {},
+    () => {},
     mockServiceCall,
     'testservice',
     mockConstructService,
