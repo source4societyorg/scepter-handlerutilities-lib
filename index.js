@@ -1,5 +1,5 @@
 const utilities = require('@source4society/scepter-utility-lib')
-const getEnvironment = () => utilities.valueOrDefault(process.env.stage, 'dev')
+const getEnvironment = () => utilities.valueOrDefault(process.env.STAGE, 'development')
 const getServicesPath = () => utilities.valueOrDefault(process.env.SERVICES_PATH, './services')
 const getCredentialsPath = () => utilities.valueOrDefault(process.env.CREDENTIALS_PATH, './credentials')
 const getParametersPath = () => utilities.valueOrDefault(process.env.PARAMETERS_PATH, './parameters')

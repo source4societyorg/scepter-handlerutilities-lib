@@ -1,5 +1,5 @@
 test('Environment variable values are set to defaults', () => {
-  delete process.env.stage
+  delete process.env.STAGE
   delete process.env.SERVICE_PATH
   delete process.env.CREDENTIALS_PATH
   delete process.env.PARAMETERS_PATH
@@ -9,7 +9,7 @@ test('Environment variable values are set to defaults', () => {
   const getCredentialsPath = require('../index').getCredentialsPath
   const getParametersPath = require('../index').getParametersPath
   const getServicesPath = require('../index').getServicesPath
-  expect(getEnvironment()).toEqual('dev')
+  expect(getEnvironment()).toEqual('development')
   expect(getServicePath()).toEqual('../../../service')
   expect(getServicesPath()).toEqual('./services')
   expect(getCredentialsPath()).toEqual('./credentials')

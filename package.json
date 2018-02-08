@@ -1,6 +1,6 @@
 {
   "name": "@source4society/scepter-handlerutilities-lib",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Utilities for universal serverless handler functions",
   "main": "index.js",
   "repository": "git@github.com:source4societyorg/scepter-handlerutilities-lib.git",
