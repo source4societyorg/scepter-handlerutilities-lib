@@ -1,26 +1,29 @@
 {
   "name": "@source4society/scepter-handlerutilities-lib",
-  "version": "1.1.1",
+  "version": "2.0.1",
   "description": "Utilities for universal serverless handler functions",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "git@github.com:source4societyorg/scepter-handlerutilities-lib.git",
   "author": "Source 4 Society <accounts@source4society.org>",
   "license": "AGPL-3.0",
   "private": false,
   "scripts": {
-    "test": "eslint ./**/*.js --ignore-path .gitignore && jest --coverage"
+    "test": "eslint ./src/*.js ./tests/*.js && jest --coverage",
+    "build": "uglifyjs ./src/*.js -o ./lib/index.js",
+    "prepublish": "yarn test & npm run build"
   },
   "dependencies": {
-    "@source4society/scepter-utility-lib": "^0.0.22"
+    "@source4society/scepter-utility-lib": "^5.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.17.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jest": "^21.5.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "jest-cli": "^22.1.4"
+    "eslint": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest-cli": "^24.9.0",
+    "uglify-es": "^3.3.9"
   }
 }
